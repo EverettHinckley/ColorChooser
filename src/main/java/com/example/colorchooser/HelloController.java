@@ -40,10 +40,10 @@ public class HelloController {
     private double alphaValue=0.0;
 
     public void initialize(){
-        redAmount.textProperty().bindBidirectional(redSlider.valueProperty(), new NumberStringConverter());
-        greenAmount.textProperty().bindBidirectional(greenSlider.valueProperty(), new NumberStringConverter());
-        blueAmount.textProperty().bindBidirectional(blueSlider.valueProperty(), new NumberStringConverter());
-        alphaAmount.textProperty().bindBidirectional(alphaSlider.valueProperty(), new NumberStringConverter());
+        redAmount.textProperty().bind(redSlider.valueProperty().asString("%.0f"));
+        greenAmount.textProperty().bind(greenSlider.valueProperty().asString("%.0f"));
+        blueAmount.textProperty().bind(blueSlider.valueProperty().asString("%.0f"));
+        alphaAmount.textProperty().bind(alphaSlider.valueProperty().asString("%.2f"));
         redSlider.valueProperty().addListener(
                 new ChangeListener<Number>() {
                     @Override
