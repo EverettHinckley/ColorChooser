@@ -28,9 +28,9 @@
       <Slider fx:id="blueSlider" max="255.0" translateY="-47.5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <Slider fx:id="alphaSlider" max="1.0" translateY="-112.5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <TextField fx:id="redAmount" text="0" GridPane.columnIndex="2" />
-      <TextField fx:id="greenAmount" editable="false" text="0" translateY="12.5" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-      <TextField fx:id="blueAmount" editable="false" text="0" translateY="-50.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-      <TextField fx:id="alphaAmount" editable="false" text="0" translateY="-115.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="greenAmount" text="0" translateY="12.5" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="blueAmount" text="0" translateY="-50.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="alphaAmount" text="0" translateY="-115.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <StackPane GridPane.columnIndex="3" GridPane.rowIndex="2">
          <children>
             <Circle fill="#949494" radius="73.0" stroke="BLACK" strokeType="INSIDE" />
